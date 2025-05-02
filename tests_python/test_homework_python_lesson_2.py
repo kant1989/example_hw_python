@@ -89,8 +89,8 @@ def test_find_suitable_user():
 # "Open Browser [Chrome]"
 
 
-def func_name_to_readable(func_name, *args):
-    s = func_name.__name__.replace('_', ' ').title()
+def func_name_to_readable(func, *args):
+    s = func.__name__.replace('_', ' ').title()
     l = [i for i in args]
     return s + ' [' + ', '.join(l) + ']'
 
