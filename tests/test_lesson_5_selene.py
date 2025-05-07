@@ -33,7 +33,7 @@ def test_fill_registration_form_and_submit():
     browser.all('#hobbiesWrapper label[title]').should(have.exact_texts('Sports', 'Reading', 'Music')).element_by(
         have.exact_text('Sports')).click()
 
-    browser.element('#uploadPicture').send_keys(os.path.join(os.path.join(dirname(dirname(abspath(__file__))), "resources", 'happy_new_year.jpg')))
+    browser.element('#uploadPicture').send_keys(os.path.join(os.path.join(dirname(dirname(abspath(__file__))), "resources", 'foto.jpg')))
 
     browser.element('#currentAddress').should(have.attribute('placeholder').value('Current Address')).type('Moscow, Kremlin')
 
@@ -54,7 +54,7 @@ def test_fill_registration_form_and_submit():
             '01 January,2000',
             'Physics',
             'Sports',
-            'happy_new_year.jpg',
+            'foto.jpg',
             'Moscow, Kremlin',
             'NCR Delhi',
         )
