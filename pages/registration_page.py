@@ -104,7 +104,7 @@ class RegistrationPage:
         self.select_gender(user.gender)
         self.fill_phone_number(user.phone_number)
         self.fill_date_of_birth(
-            user.date_of_birth.strftime("2000"),
+            user.date_of_birth.strftime("%Y"),
             user.date_of_birth.strftime("%B"),
             user.date_of_birth.strftime("%d"),
         )
