@@ -1,4 +1,4 @@
-from pages.registration_page import RegistrationPage
+from hw_python.pages.registration_page import RegistrationPage
 
 
 class Application:

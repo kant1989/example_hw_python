@@ -2,8 +2,8 @@ import os
 
 import allure
 from selene import browser, have, command
-import resources
-from data.users import User
+from hw_python import resources
+from hw_python.data.users import User
 
 
 class RegistrationPage:

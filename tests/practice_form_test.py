@@ -1,11 +1,7 @@
-from pathlib import Path
-from selene.support.shared import browser
-from selene import have, by
-from selene import command
+from selene import browser, have, command
 import os
 
-import resources
-import tests
+from hw_python import resources
 
 
 def test_student_registration_form():
@@ -95,9 +91,7 @@ def test_student_registration_form():
 
     browser.element('#subjectsInput').type('Computer Science').press_enter()
     browser.element('#uploadPicture').set_value(
-        os.path.abspath(
-            os.path.join(os.path.dirname(resources.__file__), 'foto.jpg')
-        )
+        os.path.abspath(os.path.join(os.path.dirname(resources.__file__), 'foto.jpg'))
     )
     '''
     # Using pathlib module:

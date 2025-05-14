@@ -1,6 +1,6 @@
 from datetime import date
 from dataclasses import dataclass
-from data.enums import Gender, Subject, Hobby
+from hw_python.data.enums import Gender, Subject, Hobby
 
 
 @dataclass

@@ -1,16 +1,17 @@
 import allure
 
-from data import users
-from pages.application import app
+from hw_python.data import users
+from hw_python.pages.application import app
 
 
 @allure.label("owner", "Kantemir Koshiev")
 @allure.feature("Регистрация")
 @allure.story("Регистрация студента")
 def test_student_registration_form():
-    """
+    '''
     Регистрация пользователя и проверка данных пользователя после регистрации
-    """
+    '''
+    # GIVEN
     app.registration_page.open()
 
     # WHEN
